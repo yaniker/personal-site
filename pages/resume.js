@@ -2,7 +2,7 @@ export default function Resume() {
   return (
     <main className="min-h-screen bg-white text-gray-900 p-10 max-w-4xl mx-auto">
     <section className="mb-6 text-center">
-        <h1 className="text-3xl font-bold mb-2">Erim Yanik – Resume</h1>
+        <h1 className="text-3xl font-bold mb-2">Dr. Erim Yanik</h1>
         <p>Tallahassee, FL</p>
         <p>+1-518-258-1691</p>
         <p>
