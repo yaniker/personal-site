@@ -114,20 +114,143 @@ export default function ResumeContent() {
       <section className="mb-6">
         <h2 className="text-2xl font-semibold mb-2">Projects</h2>
         <ul className="list-disc list-inside">
-          <li><strong>Meta-learner:</strong> PyTorch codebase for one-shot and few-shot learning on time-series tasks in low-data environments. Under active consideration for product integration by a healthtech company.</li>
-          <li><strong>TrustPy:</strong> 1K+/mo downloads, Python package for validating AI/ML model reliability and uncertainty before deployment. Distributed via Conda-Forge and PyPI. Actively managed with Git and CI/CD.</li>
-          <li><strong>Android clothing recommendation app:</strong> Uses ViT + LLM head and TF-based classifier to recommend personalized, context-aware outfit pairings. Runs locally via TFLite for private and low-latency inference.</li>
-          <li><strong>Slurm automation:</strong> Bash repository for automating HPC job workflows for large-scale computing.</li>
+          <li>
+            <a
+              href="https://github.com/yaniker/one-shot-skill-assessment-in-high-stakes-domains-with-limited-data-via-meta-learning"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 underline"
+            >
+              <strong>Meta-learner:</strong> 
+            </a> PyTorch codebase for one-shot and few-shot learning on time-series tasks in low-data environments. Under active consideration for product integration by a healthtech company.
+          </li>
+
+          <li>
+            <a
+              href="https://github.com/yaniker/TrustPy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 underline"
+            >
+              <strong>TrustPy:</strong> 
+            </a> 1K+/mo downloads, Python package for validating AI/ML model reliability and uncertainty before deployment. Distributed via Conda-Forge and PyPI. Actively managed with Git and CI/CD.
+          </li>
+
+          <li>
+            <a
+              href="https://github.com/yaniker/ClothingRecommendationApp"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 underline"
+            >
+              <strong>Android Clothing Recommendation App:</strong> 
+            </a> Uses ViT + LLM head and TF-based classifier to recommend personalized, context-aware outfit pairings. Runs locally via TFLite for private and low-latency inference.
+          </li>
+
+          <li>
+            <a
+              href="https://github.com/yaniker/hpc-job-automation"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 underline"
+            >
+              <strong>ASlurm automation:</strong> 
+            </a> Bash repository for automating HPC job workflows for large-scale computing.
+          </li>
         </ul>
       </section>
 
       {/* Certifications */}
       <section className="mb-6">
         <h2 className="text-2xl font-semibold mb-2">Certifications</h2>
-        <ul className="list-disc list-inside">
-          <li>Generative AI Engineering with LLMs Specialization – IBM (04/2025)</li>
-          <li>Generative AI with Large Language Models – DeepLearning.AI & AWS (03/2025)</li>
-          <li>AI Engineering Professional Certificate – IBM (06/2022)</li>
+        <ul className="list-disc list-inside space-y-1">
+         <li>
+            <a
+              href="https://www.coursera.org/account/accomplishments/specialization/UR1BFVG9FUXV"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 underline"
+            >
+              Generative AI Engineering with LLMs
+            </a> – IBM (Apr 2025)
+          </li>
+
+          <li>
+            <a
+              href="https://www.coursera.org/account/accomplishments/verify/J892C4KOELP2"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 underline"
+            >
+              Generative AI with Large Language Models
+            </a> – DeepLearning.AI & AWS (Mar 2025)
+          </li>
+
+          <li>
+            <a
+              href="https://www.coursera.org/account/accomplishments/verify/Q3C5JAB9GLSW"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 underline"
+            >
+              Introduction to Machine Learning in Production
+            </a> – DeepLearning.AI (Mar 2024)
+          </li>
+
+          <li>
+            <a
+              href="https://www.coursera.org/account/accomplishments/certificate/Y8DCBKC6LQQR"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 underline"
+            >
+              Custom Models, Layers, and Loss Functions with TensorFlow
+            </a> – DeepLearning.AI (Jul 2022)
+          </li>
+
+          <li>
+            <a
+              href="https://www.coursera.org/account/accomplishments/specialization/certificate/R3W39XTNPEGW"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 underline"
+            >
+              AI Engineering Professional Certificate
+            </a> – IBM (Jun 2022)
+          </li>
+
+          <li>
+            <a
+              href="https://www.coursera.org/account/accomplishments/certificate/ZYYZEDNB572T"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 underline"
+            >
+              Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization
+            </a> – DeepLearning.AI (Jun 2022)
+          </li>
+
+          <li>
+            <a
+              href="https://www.coursera.org/account/accomplishments/certificate/S8MDVPN39MR4"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 underline"
+            >
+              Neural Networks and Deep Learning
+            </a> – DeepLearning.AI (Jun 2022)
+          </li>
+
+          <li>
+            <a
+              href="https://www.coursera.org/account/accomplishments/certificate/BBJN6AZWBUGJ"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 underline"
+            >
+              Structuring Machine Learning Projects
+            </a> – DeepLearning.AI (Jun 2022)
+          </li>
         </ul>
       </section>
     </div>
