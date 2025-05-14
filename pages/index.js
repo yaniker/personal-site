@@ -8,8 +8,8 @@ export default function Home() {
         <Image
           src="/profile.jpg"
           alt="Erim Yanik"
-          width={150}
-          height={150}
+          width={220}
+          height={220}
           className="rounded-full border border-gray-300 shadow-md mb-3"
         />
         <h1 className="text-xl font-bold text-center">Dr. Erim Yanik</h1>
