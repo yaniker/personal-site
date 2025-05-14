@@ -154,7 +154,7 @@ export default function ResumeContent() {
               rel="noopener noreferrer"
               className="text-blue-600 underline"
             >
-              <strong>ASlurm automation:</strong> 
+              <strong>Slurm automation:</strong> 
             </a> Bash repository for automating HPC job workflows for large-scale computing.
           </li>
         </ul>
