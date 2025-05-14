@@ -1,15 +1,36 @@
 export default function Resume() {
   return (
     <main className="min-h-screen bg-white text-gray-900 p-10 max-w-4xl mx-auto">
-      <h1 className="text-3xl font-bold mb-6">Erim Yanik – Resume</h1>
-
-      <section className="mb-6">
-        <p><strong>Location:</strong> Tallahassee, FL</p>
-        <p><strong>Phone:</strong> +1-518-258-1691</p>
-        <p><strong>Email:</strong> <a className="text-blue-600 underline" href="mailto:erimyanik@gmail.com">erimyanik@gmail.com</a></p>
-        <p><strong>LinkedIn:</strong> <a className="text-blue-600 underline" href="https://www.linkedin.com/in/erim-yanik/" target="_blank" rel="noopener noreferrer">linkedin.com/in/erim-yanik</a></p>
-        <p><strong>GitHub:</strong> <a className="text-blue-600 underline" href="https://github.com/yaniker/" target="_blank" rel="noopener noreferrer">github.com/yaniker</a></p>
-      </section>
+    <section className="mb-6 text-center">
+        <h1 className="text-3xl font-bold mb-2">Erim Yanik – Resume</h1>
+        <p>Tallahassee, FL</p>
+        <p>+1-518-258-1691</p>
+        <p>
+            <a className="text-blue-600 underline" href="mailto:erimyanik@gmail.com">
+            erimyanik@gmail.com
+            </a>
+        </p>
+        <p>
+            <a
+            className="text-blue-600 underline"
+            href="https://www.linkedin.com/in/erim-yanik/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            linkedin.com/in/erim-yanik
+            </a>
+        </p>
+        <p>
+        <a
+            className="text-blue-600 underline"
+            href="https://github.com/yaniker/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            github.com/yaniker
+            </a>
+        </p>
+        </section>
 
       <section className="mb-6">
         <h2 className="text-2xl font-semibold mb-2">Skills</h2>
