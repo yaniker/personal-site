@@ -2,12 +2,14 @@ import { useState } from "react";
 import Image from "next/image";
 import ResumeContent from "../components/ResumeContent";
 import ProjectsContent from "../components/ProjectsContent";
+import LeadershipContent from "../components/LeadershipContent";
+
 
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState("about");
 
-  const tabs = ["about", "projects", "public speaking", "leadership", "creative", "resume"];
+  const tabs = ["about", "projects", "leadership", "public speaking", "publications", "on media", "resume", "hobbies"];
 
   const renderContent = () => {
     switch (activeTab) {
@@ -18,8 +20,8 @@ export default function Home() {
       case "public speaking":
         return <p className="text-lg mt-4">Public speaking content</p>;
       case "leadership":
-        return <p className="text-lg mt-4">Leadership stuff</p>;
-      case "creative":
+        return <LeadershipContent />;
+      case "hobbies":
         return <p className="text-lg mt-4">Photography and music</p>;
       case "resume":
         return <ResumeContent />;
