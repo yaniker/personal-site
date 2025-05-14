@@ -4,19 +4,22 @@ export default function LeadershipContent() {
       title: "President",
       org: "Tallahassee Toastmasters Club – 2nd oldest in Florida State",
       date: "July 2024 – Present",
-      desc: "Introduced parliamentary reforms that increased membership by 40% in 3 months."
+      desc: "Introduced parliamentary reforms that increased membership by 40% in 3 months.",
+      image: "/leadership_media/toastmaster_president.jpg"
     },
     {
       title: "Area Director",
       org: "Toastmasters International – District 84, Area 80",
       date: "July 2024 – Present",
-      desc: "Lobbied to protect club rights, including one at a correctional facility."
+      desc: "Lobbied to protect club rights, including one at a correctional facility.",
+      image: "/leadership_media/area_director.jpg"
     },
     {
       title: "Coach",
       org: "Talk of Tallahassee Toastmasters Club",
       date: "October 2024 – Present",
-      desc: "Appointed by District to coach and boost membership."
+      desc: "Appointed by District to coach and boost membership.",
+      image: "/leadership_media/toast_club_coach.jpg"
     },
     {
       title: "Organizing Associate",
@@ -81,24 +84,41 @@ export default function LeadershipContent() {
     <div className="bg-white text-gray-900 p-6 rounded shadow max-w-4xl mx-auto">
       <h2 className="text-2xl font-semibold mb-6">Leadership</h2>
 
-      <div className="space-y-6">
+      <div className="grid gap-8">
         {leadership.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col sm:flex-row sm:justify-between sm:items-start border-b pb-4"
+            className={`flex flex-col sm:flex-row ${
+              index % 2 === 0 ? "sm:flex-row" : "sm:flex-row-reverse"
+            } items-start sm:items-center gap-6`}
           >
-            <div className="mb-1 sm:mb-0">
-              <p className="font-semibold">{item.title} | {item.org}</p>
-              {item.desc && (
-                <p className="text-sm text-gray-700 mt-1">{item.desc}</p>
-              )}
+            {/* Image bubble */}
+            {item.image && (
+              <img
+                src={item.image}
+                alt={`${item.title} at ${item.org}`}
+                className="w-48 h-48 rounded-full object-cover border shadow"
+              />
+            )}
+
+            {/* Text block */}
+            <div className="flex-1">
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start">
+                <div>
+                  <p className="font-semibold">{item.title} | {item.org}</p>
+                  {item.desc && (
+                    <p className="text-sm text-gray-700 mt-1">{item.desc}</p>
+                  )}
+                </div>
+                <span className="text-sm text-gray-500 sm:text-right whitespace-nowrap mt-2 sm:mt-0">
+                  {item.date}
+                </span>
+              </div>
             </div>
-            <span className="text-sm text-gray-500 sm:text-right whitespace-nowrap">
-              {item.date}
-            </span>
           </div>
         ))}
       </div>
+
     </div>
   );
 }
