@@ -30,14 +30,12 @@ export default function ResumeContent() {
       {/* Contact info - centered */}
       <section className="mb-6 text-center">
         <h1 className="text-3xl font-bold mb-2">Dr. Erim Yanik</h1>
-        <p>Tallahassee, FL</p>
-        <p>+1-518-258-1691</p>
+        <p>Tallahassee, FL | +1-518-258-1691</p>
         <p>
           <a className="text-blue-600 underline" href="mailto:erimyanik@gmail.com">
             erimyanik@gmail.com
           </a>
-        </p>
-        <p>
+        &nbsp;|&nbsp; 
           <a
             className="text-blue-600 underline"
             href="https://www.linkedin.com/in/erim-yanik/"
@@ -46,8 +44,7 @@ export default function ResumeContent() {
           >
             linkedin.com/in/erim-yanik
           </a>
-        </p>
-        <p>
+            &nbsp;|&nbsp; 
           <a
             className="text-blue-600 underline"
             href="https://github.com/yaniker/"
@@ -77,38 +74,38 @@ export default function ResumeContent() {
 
         <div>
           <h3 className="font-bold">Startup Initiative, Remote</h3>
-          <p className="italic">Project Lead & Machine Learning Engineer | 04/2024 – 03/2025</p>
+          <p className="font-bold">Project Lead & Machine Learning Engineer | 04/2024 – 03/2025</p>
           <ul className="list-disc list-inside">
-            <li>Won SAGES’ FLS automation challenge (beat 60+ companies)</li>
-            <li>Led AI prototype deployment on GPU-backed AWS EC2 in &lt;6 months</li>
-            <li>Now certifying surgeons across US & Canada, cutting test costs by 25%</li>
+            <li>Developed an AI system that won SAGES’ FLS automation challenge, beating over 60 companies.</li>
+            <li>Led a cross-functional team to deliver a production-ready AI prototype on GPU-backed AWS EC2 in under 6 months, eliminating a month-long manual review cycle.</li>
+            <li>Currently integrating with a partner’s frontend to <strong>certify general and OB-GYN surgeons across the US and Canada</strong>, projected to lower per-user testing costs by 25% ($150/test taker, $2.5M total).</li>
           </ul>
         </div>
 
         <div className="mt-4">
           <h3 className="font-bold">FAMU-FSU College of Engineering</h3>
-          <p className="italic">Generative AI Research Scientist | 12/2024 – Present</p>
+          <p className="font-bold">Generative AI Research Scientist | 12/2024 – Present</p>
           <ul className="list-disc list-inside">
-            <li>Building agentic LLMs using RL + causal knowledge graphs</li>
-            <li>Cut data labeling cost by 87.6% with Active Learning</li>
+            <li>Developing agentic LLMs for real-time decision support using RL and causal knowledge graphs.</li>
+            <li>Reduced data labeling needs by 87.6% via Active Learning in medical settings where labeling is costly.</li>
           </ul>
 
-          <p className="italic mt-2">AI Research Scientist – Postdoc | 01/2023 – 12/2024</p>
+          <p className="font-bold">AI Research Scientist – Postdoc | 01/2023 – 12/2024</p>
           <ul className="list-disc list-inside">
-            <li>96% accuracy in combat medic sims with gaze-based attention</li>
-            <li>99% data reduction via meta-learning (OR performance: 89.7%)</li>
-            <li>Published in: Nature Communications Med, Computers in Biol Med</li>
+            <li>Built a novel gaze-based attention block, achieving 96% accuracy in combat medic training simulations. </li>
+            <li>Reduced data needs by 99% while maintaining 89.7% accuracy in the OR with as few as one training sample, enabling scalable deployment in data-scarce hospital workflows, via meta-learning. </li>
+            <li>(Published: Nature Communications Medicine; Computers in Biology and Medicine)</li>
           </ul>
         </div>
 
         <div className="mt-4">
-          <h3 className="font-bold">RPI, Troy, NY</h3>
-          <p className="italic">Research Assistant – PhD | 05/2018 – 12/2022</p>
+          <h3 className="font-bold">Rensselaer Polytechnic Institute (RPI), Troy, NY</h3>
+          <p className="font-bold">Research Assistant – PhD | 05/2018 – 12/2022</p>
           <ul className="list-disc list-inside">
-            <li>Boosted surgical skill assessment by 12.6% with VBA-Net</li>
-            <li>Added neuroimaging fusion, improved results 5.7%</li>
-            <li>Real-time task error detection, validated in simulation</li>
-            <li>Published in: Nature Scientific Reports, JAMA Surgery, etc.</li>
+            <li>Improved automated surgical skill assessment benchmark by 12.6% via the novel Video-Based Assessment Network (VBA-Net) using instrument tracking and attention-based autoencoders. </li>
+            <li>Improved VBA-Net performance by 5.7% through multimodal fusion of videos and neuroimaging.</li>
+            <li>Built a real-time tool to highlight task errors, statistically validated in surgical simulations. </li>
+            <li>(Published: Nature Scientific Reports; Nature Scientific Data; JAMA Surgery; The Journal of Defense Modeling and Simulation)</li>
           </ul>
         </div>
       </section>
@@ -117,10 +114,10 @@ export default function ResumeContent() {
       <section className="mb-6">
         <h2 className="text-2xl font-semibold mb-2">Projects</h2>
         <ul className="list-disc list-inside">
-          <li><strong>Meta-learner:</strong> One/few-shot time-series learner (healthtech interest)</li>
-          <li><strong>TrustPy:</strong> 1K+/mo downloads, AI reliability checker (PyPI, Conda-Forge)</li>
-          <li><strong>Outfit recommender:</strong> ViT + LLM app using TFLite, runs locally</li>
-          <li><strong>Slurm automation:</strong> Bash tool for HPC workflows</li>
+          <li><strong>Meta-learner:</strong> PyTorch codebase for one-shot and few-shot learning on time-series tasks in low-data environments. Under active consideration for product integration by a healthtech company.</li>
+          <li><strong>TrustPy:</strong> 1K+/mo downloads, Python package for validating AI/ML model reliability and uncertainty before deployment. Distributed via Conda-Forge and PyPI. Actively managed with Git and CI/CD.</li>
+          <li><strong>Android clothing recommendation app:</strong> Uses ViT + LLM head and TF-based classifier to recommend personalized, context-aware outfit pairings. Runs locally via TFLite for private and low-latency inference.</li>
+          <li><strong>Slurm automation:</strong> Bash repository for automating HPC job workflows for large-scale computing.</li>
         </ul>
       </section>
 
@@ -128,8 +125,8 @@ export default function ResumeContent() {
       <section className="mb-6">
         <h2 className="text-2xl font-semibold mb-2">Certifications</h2>
         <ul className="list-disc list-inside">
-          <li>Generative AI Engineering with LLMs – IBM (04/2025)</li>
-          <li>Generative AI with LLMs – DeepLearning.AI & AWS (03/2025)</li>
+          <li>Generative AI Engineering with LLMs Specialization – IBM (04/2025)</li>
+          <li>Generative AI with Large Language Models – DeepLearning.AI & AWS (03/2025)</li>
           <li>AI Engineering Professional Certificate – IBM (06/2022)</li>
         </ul>
       </section>
