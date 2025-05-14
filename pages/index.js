@@ -4,12 +4,12 @@ import ResumeContent from "../components/ResumeContent";
 import ProjectsContent from "../components/ProjectsContent";
 import LeadershipContent from "../components/LeadershipContent";
 import MediaContent from "../components/MediaContent";
-
+import PublicationsContent from "../components/PublicationsContent";
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState("about");
 
-  const tabs = ["about", "projects", "leadership", "public speaking", "publications", "media", "resume", "hobbies"];
+  const tabs = ["about", "projects", "publications", "resume", "leadership", "public speaking", "media", "hobbies"];
 
   const renderContent = () => {
     switch (activeTab) {
@@ -28,6 +28,8 @@ I’m an AI researcher focused on making machine learning practical, reliable, a
         return <ResumeContent />;
       case "media":
         return <MediaContent />;
+      case "publications":
+      return <PublicationsContent />;
       default:
         return null;
     }
