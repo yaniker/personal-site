@@ -1,6 +1,32 @@
 export default function Resume() {
   return (
-    <main className="min-h-screen bg-white text-gray-900 p-10 max-w-4xl mx-auto">
+     <main className="relative min-h-screen bg-white text-gray-900 p-10 max-w-4xl mx-auto">
+      {/* Download button in top-right */}
+      <div className="absolute top-4 right-4">
+        <a
+          href="/resume_erim_yanik.pdf"
+          download
+          title="Download PDF"
+          className="flex items-center space-x-1 text-blue-600 hover:text-blue-800"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1M7 10l5 5m0 0l5-5m-5 5V4"
+            />
+          </svg>
+          <span className="text-sm font-medium">Download PDF</span>
+        </a>
+      </div>
+
     <section className="mb-6 text-center">
         <h1 className="text-3xl font-bold mb-2">Dr. Erim Yanik</h1>
         <p>Tallahassee, FL</p>
@@ -98,18 +124,6 @@ export default function Resume() {
           <li>AI Engineering Professional Certificate – IBM (06/2022)</li>
         </ul>
       </section>
-
-      <hr className="my-8" />
-
-      <p className="text-center">
-        <a
-          href="/resume_erim_yanik.pdf"
-          download
-          className="text-blue-600 underline font-semibold"
-        >
-          Download PDF Resume
-        </a>
-      </p>
     </main>
   );
 }
