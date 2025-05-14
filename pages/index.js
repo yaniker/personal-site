@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white text-gray-900 p-6 flex flex-col items-start">
+    <main className="min-h-screen bg-gradient-to-br from-rose-100 via-red-200 to-orange-100 text-gray-900 p-6 flex flex-col items-start">
       {/* Top-left profile box */}
       <div className="flex flex-col items-center w-48">
         <Image
