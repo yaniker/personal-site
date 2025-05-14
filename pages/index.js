@@ -3,18 +3,19 @@ import Image from "next/image";
 import ResumeContent from "../components/ResumeContent";
 import ProjectsContent from "../components/ProjectsContent";
 import LeadershipContent from "../components/LeadershipContent";
-
+import MediaContent from "../components/MediaContent";
 
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState("about");
 
-  const tabs = ["about", "projects", "leadership", "public speaking", "publications", "on media", "resume", "hobbies"];
+  const tabs = ["about", "projects", "leadership", "public speaking", "publications", "media", "resume", "hobbies"];
 
   const renderContent = () => {
     switch (activeTab) {
       case "about":
-        return <p className="text-lg mt-4">Erim Yanik</p>;
+        return <p className="text-lg mt-4">Hi, I’m Dr. Erim Yanik.
+I’m an AI researcher focused on making machine learning practical, reliable, and human-centered. I build systems that solve real-world problems — from surgical training tools to generative AI applications. Outside the lab, I lead, speak, create, and coach. Welcome to my page!</p>;
       case "projects":
         return <ProjectsContent />;
       case "public speaking":
@@ -25,13 +26,18 @@ export default function Home() {
         return <p className="text-lg mt-4">Photography and music</p>;
       case "resume":
         return <ResumeContent />;
+      case "media":
+        return <MediaContent />;
       default:
         return null;
     }
   };
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-rose-100 via-red-200 to-orange-100 text-gray-900 p-6">
+    <main
+        className="min-h-screen text-gray-900 p-6 bg-cover bg-center"
+        style={{ backgroundImage: "url('/ocean.jpg')" }}
+      >
       <div className="flex flex-col sm:flex-row items-start gap-8">
         {/* Left: Profile box */}
         <div className="flex flex-col items-center w-48">
