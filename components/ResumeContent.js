@@ -259,13 +259,13 @@ export default function ResumeContent() {
         <h2 className="text-2xl font-semibold mb-2">Education</h2>
         <ul className="list-disc list-inside space-y-1">
           <li>
-            <strong>PhD in Machine Learning Engineering</strong>, Rensselaer Polytechnic Institute, NY — <span className="text-gray-600">Dec 2022</span>
+            <strong>PhD in Machine Learning Engineering</strong>, Rensselaer Polytechnic Institute (RPI), NY, USA — <span className="text-gray-600">Dec 2022</span>
           </li>
           <li>
-            <strong>MS in Mechanical Engineering</strong>, Southern Illinois University Edwardsville (SIUe), IL — <span className="text-gray-600">May 2018</span>
+            <strong>MS in Mechanical Engineering</strong>, Southern Illinois University Edwardsville (SIUe), IL, USA — <span className="text-gray-600">May 2018</span>
           </li>
           <li>
-            <strong>BS in Mechanical Engineering</strong>, Istanbul Technical University, Turkiye — <span className="text-gray-600">Jul 2016</span>
+            <strong>BS in Mechanical Engineering</strong>, Istanbul Technical University (ITU), Turkiye — <span className="text-gray-600">Jul 2016</span>
           </li>
         </ul>
       </section>
