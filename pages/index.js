@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import ResumeContent from "../components/ResumeContent";
+import ProjectsContent from "../components/ProjectsContent";
 
 
 export default function Home() {
@@ -13,7 +14,7 @@ export default function Home() {
       case "about":
         return <p className="text-lg mt-4">Erim Yanik</p>;
       case "projects":
-        return <p className="text-lg mt-4">Projects go here</p>;
+        return <ProjectsContent />;
       case "public speaking":
         return <p className="text-lg mt-4">Public speaking content</p>;
       case "leadership":
