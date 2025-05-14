@@ -61,11 +61,11 @@ export default function Resume() {
       <section className="mb-6">
         <h2 className="text-2xl font-semibold mb-2">Skills</h2>
         <ul className="list-disc list-inside space-y-1">
-          <li><strong>Programming:</strong> Python, Bash</li>
-          <li><strong>Generative AI:</strong> NLP, LLMs, ViT, Prompt Engineering, Hugging Face, LangChain, RAG</li>
-          <li><strong>ML/DL:</strong> TensorFlow, PyTorch, Keras, Scikit-learn, Pandas, NumPy, CV, RL</li>
-          <li><strong>Data & Tools:</strong> Feature Engineering, Preprocessing, Visualization, Git, GitHub</li>
-          <li><strong>HPC & Cloud:</strong> Slurm, AWS, OpenAI API, Linux</li>
+          <li><strong>Programming Languages:</strong> Python, Bash</li>
+          <li><strong>Generative AI:</strong> Natural Language Processing (NLP), Large Language Models (LLM), Vision Transformers (ViT), Prompt Engineering, Hugging Face, LangChain, Retrieval-Augmented Generation (RAG)</li>
+          <li><strong>Machine Learning & Deep Learning:</strong> TensorFlow (TF), PyTorch, Keras, Scikit-learn, Pandas, NumPy, Computer Vision, Algorithm Development, Predictive Modeling, Reinforcement Learning (RL)</li>
+          <li><strong>Data engineering & Tools:</strong> Feature Engineering, Data Preprocessing, Data Visualization (Matplotlib, Seaborn), Statistical Analysis, Git, GitHub</li>
+          <li><strong>High Performance Computing (HPC) & Cloud computing:</strong> Slurm, AWS, OpenAI API, Linux</li>
         </ul>
       </section>
 
