@@ -1,6 +1,6 @@
 export default function Resume() {
   return (
-     <main className="relative min-h-screen bg-white text-gray-900 p-10 max-w-4xl mx-auto">
+    <main className="relative min-h-screen bg-white text-gray-900 px-4 py-10 mx-1">
       {/* Download button in top-right */}
       <div className="absolute top-4 right-4">
         <a

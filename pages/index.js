@@ -1,17 +1,21 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white text-gray-900 flex flex-col items-center justify-center p-10">
-      <h1 className="text-4xl font-bold mb-4">Dr. Erim Yanik</h1>
-      <p className="text-lg mb-6 text-center">
-        AI/ML Research Scientist • Public Speaker • Musician • Photographer
-      </p>
-      <div className="space-x-4">
-        <a href="/ai_portfolio" className="text-blue-600 underline">AI portfolio</a>
-        <a href="/public_speaking" className="text-blue-600 underline">Public Speaking</a>
-        <a href="/leadership" className="text-blue-600 underline">Leadership</a>
-        <a href="/creative" className="text-blue-600 underline">Creative</a>
-        <a href="/about" className="text-blue-600 underline">About</a>
-         <a href="/resume" className="text-blue-600 underline">Resume</a>
+    <main className="min-h-screen bg-white text-gray-900 p-6 flex flex-col items-start">
+      {/* Top-left profile box */}
+      <div className="flex flex-col items-center w-48">
+        <Image
+          src="/profile.jpg"
+          alt="Erim Yanik"
+          width={150}
+          height={150}
+          className="rounded-full border border-gray-300 shadow-md mb-3"
+        />
+        <h1 className="text-xl font-bold text-center">Dr. Erim Yanik</h1>
+        <p className="text-sm text-center text-gray-600">
+          AI/ML Research Scientist
+        </p>
       </div>
     </main>
   );
